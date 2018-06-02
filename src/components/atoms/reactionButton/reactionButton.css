@@ -1,0 +1,16 @@
+.ReactionButton__text{
+  color: #616770;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  height: 32px;
+  line-height: 32px;
+  padding: 0 2px;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.ReactionButton__text:hover{
+  background-color: rgba(29, 33, 41, .04);
+}
