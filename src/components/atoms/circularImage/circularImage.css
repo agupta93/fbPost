@@ -1,0 +1,13 @@
+.circularImage__size--md{
+  height: 32px;
+  width: 32px;
+}
+
+.circularImage__size--lg{
+  height: 40px;
+  width: 40px;
+}
+
+.circularImage__container{
+  border-radius: 50%;
+}

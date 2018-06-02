@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// Constants
+import SIZES from './constants/sizes';
+
 const CircularImage = props => (
   <div></div>
 );
