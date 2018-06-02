@@ -1,0 +1,25 @@
+.postHeader__container{
+  display: flex;
+  align-items: center;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.postHeader__content{
+  color: #90949c;
+  margin-left: 8px;
+}
+
+.postHeader__title{
+  font-size: 14px;
+  line-height: 1.38;
+  margin-bottom: 2px;
+}
+
+.postHeader__userName{
+  color: #365899;
+  font-weight: 400;
+}
+
+.postHeader__timeAgo{
+  font-size: 12px;
+}

@@ -1,7 +1,7 @@
 const MD = 'MD';
-const XS = 'XS';
+const LG = 'LG';
 
 const SIZES = {
   MD,
-  XS,
+  LG,
 };
