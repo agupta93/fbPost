@@ -1,0 +1,12 @@
+.post__container{
+  padding: 12px 12px 0;
+  width: 500px;
+}
+
+.post__description{
+  color: #1d2129;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin-top: 6px;
+  padding-bottom: 12px;
+}

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 // Components
 import CircularImage from '../../atoms/circularImage';
-import TimeAgo from 'react-time-ago';
+import TimeAgo from 'react-timeago';
 
 // Styles
 import './postHeader.css';
@@ -20,10 +20,10 @@ const PostHeader = props => {
           <span className="postHeader__userName">{props.userName} </span>
           <span>{props.title}</span>
         </div>
-        {/* <TimeAgo
-          locale="en"
+        <TimeAgo
+          date={props.time}
           className="postHeader__timeAgo"
-        >{props.time}</TimeAgo> */}
+        />
       </div>
     </div>
   )
@@ -31,9 +31,9 @@ const PostHeader = props => {
 
 PostHeader.propTypes = {
   imageUrl: PropTypes.string,
-  userName: PropTypes.string,
-  title: PropTypes.string,
   time: PropTypes.instanceOf(Date),
+  title: PropTypes.string,
+  userName: PropTypes.string,
 };
 
 export default PostHeader;
