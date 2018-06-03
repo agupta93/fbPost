@@ -3,8 +3,10 @@ const Post = require('../models/post.model');
 // Create and save new Post
 exports.create = (req, res) => {
 
+  const body = req.body;
+
   // Validate request
-  if (!req.body.content) {
+  if (!body.description) {
     return res.status(400).send({
       message: "Post content cannot be empty"
     });
@@ -12,8 +14,10 @@ exports.create = (req, res) => {
 
   // Create a post
   const post = new Post({
-    title: req.body.title || "Untitled Post",
-    content: req.body.content,
+    title: body.title || "Untitled Post",
+    description: body.description,
+    userName: body.userName,
+    imageUrl: body.imageUrl,
   });
 
   // save post in the database
@@ -28,7 +32,6 @@ exports.create = (req, res) => {
 
 // Retrive and return all the poosts from the database
 exports.findAll = (req, res) => {
-
   Post.find()
     .then(posts => {
       res.send(posts);

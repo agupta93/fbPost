@@ -9,7 +9,7 @@ import SIZE_TO_STYLE from './constants/sizeToStyle';
 import './circularImage.css';
 
 const CircularImage = props => {
-  const className = SIZE_TO_STYLE[props.SIZE];
+  const className = SIZE_TO_STYLE[props.size];
   return (
     <img src={props.imageUrl} className={`${className} circularImage__container`} />
   )
@@ -21,4 +21,4 @@ CircularImage.propTypes = {
 };
 
 export default CircularImage;
-export {SIZE};
+export {SIZES};

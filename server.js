@@ -3,8 +3,11 @@ const bodyParser = require('body-parser');
 
 const dbConfig = require('./config/database.config');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 const app = express();
+
+app.use(cors());
 
 require('./routes/post.routes')(app);
 

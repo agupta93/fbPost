@@ -6,6 +6,9 @@ import './App.css';
 // utils
 import createReduxStore from './utils/createReduxStore';
 
+// components
+import PostListContainer from './components/containers/PostListContainer';
+
 const store = createReduxStore();
 
 class App extends Component {
@@ -14,15 +17,7 @@ class App extends Component {
       <Provider
         store={store}
       >
-        <div className="App">
-          <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h1 className="App-title">Welcome to React</h1>
-          </header>
-          <p className="App-intro">
-            To get started, edit <code>src/App.js</code> and save to reload.
-          </p>
-        </div>
+        <PostListContainer/>
       </Provider>
     );
   }

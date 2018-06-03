@@ -5,8 +5,8 @@ import update from 'immutability-helper';
 // Constants
 import EMPTY_OBJECT_READONLY from '../constants/emptyObject';
 
-const LOAD_POSTS = 'LOAD_POSTS';
-const ADD_POST = 'ADD_POST';
+export const LOAD_POSTS = 'LOAD_POSTS';
+export const ADD_POST = 'ADD_POST';
 
 const INITIAL_STATE = {
   byId: EMPTY_OBJECT_READONLY
@@ -14,7 +14,7 @@ const INITIAL_STATE = {
 
 const loadPosts = (state = EMPTY_OBJECT_READONLY, action = EMPTY_OBJECT_READONLY) => {
   const posts = _get(action, 'payload.posts');
-  const keyedPosts = _keyBy(posts, 'id');
+  const keyedPosts = _keyBy(posts, '_id');
   const currentPosts = state.byId;
   const updatedPosts = {
     ...keyedPosts,

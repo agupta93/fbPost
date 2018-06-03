@@ -5,3 +5,5 @@ const SIZES = {
   MD,
   LG,
 };
+
+export default SIZES;
